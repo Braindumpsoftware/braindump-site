@@ -20,16 +20,18 @@
 
     <h2>What We Collect</h2>
     <ul>
-      <li><strong>User Content (Local):</strong> Brain dumps, tasks, and BrainBuddy messages are stored on your device using local storage.</li>
-      <li><strong>Optional Cloud Sync:</strong> If you enable Supabase syncing, your data is transmitted to and stored on your Supabase project.</li>
+      <li><strong>Contact Information:</strong> Your email address for account creation and login (via Supabase Authentication).</li>
+      <li><strong>Identifiers:</strong> An internal user ID (Supabase) and an app instance ID (Firebase). We do not link Firebase data to your identity.</li>
+      <li><strong>Usage Data (Analytics):</strong> Aggregated app interactions and screen views to understand feature usage (Firebase Analytics). No advertising features or cross‑app tracking.</li>
+      <li><strong>Diagnostics:</strong> Crash logs and performance data to keep the app reliable (Firebase Crashlytics).</li>
+      <li><strong>User Content:</strong> Brain dumps, tasks, and BrainBuddy messages you create. These are stored on your device (local storage) and, if you sign in, synced to Supabase for your account.</li>
       <li><strong>AI Processing:</strong> Text you submit to AI features is sent to DeepSeek solely to generate responses.</li>
     </ul>
 
     <h2>What We Don’t Collect</h2>
     <ul>
-      <li>No required account by default.</li>
-      <li>No analytics or ads tracking for MVP.</li>
       <li>No precise location.</li>
+      <li>No advertising identifiers (IDFA) and no cross‑app tracking.</li>
     </ul>
 
     <h2>Voice Input</h2>
@@ -40,16 +42,17 @@
 
     <h2>Third Parties</h2>
     <ul>
+      <li><strong>Supabase (Authentication & Database):</strong> Stores your account and any data you choose to sync.</li>
+      <li><strong>Google Firebase (Analytics & Crashlytics):</strong> Provides aggregated analytics (screens, events) and diagnostics (crash/performance reports). We do not enable advertising features.</li>
       <li><strong>DeepSeek (AI):</strong> Processes submitted text to generate responses.</li>
-      <li><strong>Supabase (optional):</strong> Stores synced data if you enable sync.</li>
-      <li><strong>Apple/Google:</strong> Provide speech services and distribution.</li>
+      <li><strong>Apple/Google:</strong> Provide speech services (if used) and app distribution.</li>
     </ul>
 
     <h2>Retention and Control</h2>
-    <p>Local data stays on your device until you delete it. Use “Clear All Data” in the app to remove local data. If you enabled Supabase sync, you can delete synced data via your account or by contacting us.</p>
+    <p>Local data stays on your device until you delete the app or remove it. If you sign in and sync to Supabase, you can delete your synced data at any time using the in‑app <em>Delete Account</em> feature (Profile → Delete Account). This permanently removes your account and associated synced data.</p>
 
     <h2>Security</h2>
-    <p>We use HTTPS for AI requests. Avoid entering sensitive personal information into prompts.</p>
+    <p>We use HTTPS for all network requests. Avoid entering sensitive personal information into prompts.</p>
 
     <h2>Children</h2>
     <p>BrainDump is not intended for children under 13.</p>
